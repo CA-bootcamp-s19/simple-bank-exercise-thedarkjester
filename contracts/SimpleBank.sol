@@ -116,7 +116,7 @@ contract SimpleBank {
 
            emit LogWithdrawal(msg.sender, withdrawAmount, newBalance);
 
-          // msg.sender.Tra
+           msg.sender.transfer(withdrawAmount);
 
            return newBalance;
     }
